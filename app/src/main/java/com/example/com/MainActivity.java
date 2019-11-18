@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                                 final EditText  userId = (EditText) layout.findViewById(R.id.userid);
                                 final EditText passWord = (EditText)layout.findViewById(R.id.password);
                                 Log.d("userid",userId.getText().toString());
-                                if(userId.getText().toString().equals("abc") || passWord.getText().toString().equals( "123")){
+                                if(userId.getText().toString().equals("abc") && passWord.getText().toString().equals( "123")){
                                     Toast.makeText(MainActivity.this,"登陆成功",Toast.LENGTH_LONG).show();
                                 }
                                 else{
